@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<script>
+    let continuar;
+    do {
+        let categoria = prompt("Digite o número da categoria do produto:\n1 - Alimento não perecível\n2 - Alimento perecível\n3 - Bebida\n4 - Limpeza");
+
+        switch(categoria) {
+            case "1":
+                alert("O produto é um Alimento não perecível.");
+                break;
+            case "2":
+                alert("O produto é um Alimento perecível.");
+                break;
+            case "3":
+                alert("O produto é um Vestuario.");
+                break;
+            case "4":
+                alert("O produto é de Limpeza.");
+                break;
+            default:
+                alert("[ERRO] Categoria inválida. Tente novamente.");
+                break;
+        }
+        continuar = prompt("Deseja verificar outra categoria? (sim/não)").toLowerCase();
+
+    } while (continuar === "sim");
+
+    alert("Obrigado por usar nosso programa :)");
+</script>
